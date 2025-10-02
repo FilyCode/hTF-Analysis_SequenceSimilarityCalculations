@@ -1,0 +1,13 @@
+# parasail_env.yml - Reproducible conda environment for sequence similarity calculations with parasail-python
+name: parasail_env 
+channels:
+  - conda-forge # Prioritize conda-forge for broader package compatibility and often more updated versions
+  - defaults    # Standard Anaconda channel
+dependencies:
+  - python=3.12 # Specific Python version for reproducibility. Keep this consistent.
+  - pip         # Essential for installing packages that aren't available directly via conda channels
+  - pandas      # For efficient handling of DataFrames (reading input CSV, creating output CSV)
+  - numpy       # Core numerical library; often a dependency for pandas and other scientific packages
+  - tqdm        # For displaying progress bars during long-running calculations
+  - pip:
+    - parasail # The core library for ultra-fast pairwise sequence alignment
