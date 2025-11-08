@@ -119,9 +119,9 @@ After the similarity calculations are complete, you can analyze and visualize th
 
   Activate your jupyter_env:
 
-    ```bash
+   ```bash
     conda activate jupyter_env
-    ```
+   ```
     
 Open and run all cells in the notebook: You can do this by launching Jupyter Lab or Jupyter Notebook and navigating to the file.
 
